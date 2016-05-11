@@ -1,0 +1,25 @@
+class A {
+   public int id2;
+   public A(int a)
+   {
+      id2 = 6;
+   }
+   static int fun1(int a)
+   {
+      return 9;
+   }
+}
+class B extends A
+{
+   public B()
+   {
+   }
+}
+class C
+{
+   int h;
+   C()
+   {
+      B.fun1(9);
+   }
+}
