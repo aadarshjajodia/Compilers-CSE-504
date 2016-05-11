@@ -1,0 +1,92 @@
+class A {
+   int x;
+   void incr_one()
+   {
+      x = x + 1;
+   }
+}
+
+
+
+Decide which offset variable will be kept it.( During the variable declaration)
+Every static field should have a unique number
+Every heap cell is of the same width as the register. 
+no calucaltions for 4/8/16/ bytes.
+For static array -  static area 24  - an array of 24 elements.
+
+Static ones - one area- static area..
+
+
+
+A{
+  
+  i - 0 Regardless of whether we access this through A's object or B's object, it should access the same i. 
+}
+
+B extends A
+{
+  j; - 1
+  k   - 2
+}
+
+C extends A
+{
+  l; = 1
+  m; = 2
+  static int x;
+}
+
+First go through the classes and make sure all the fields have the righrt offset in the classes.
+
+
+halloc returns the base address
+c = new C();
+
+c.l ( c will get base address, ) - Like assume here that c has been initialized here(i.e the object has been created.)
+C.x( Here base will be the static base pointer(sap) and the offset will be the offset for x.
+
+Assume you will have properly initialized refernces. 
+Assume errors are already checked in the program.
+
+The machine will not have a data type called boolean
+
+& and | becomes sequnce of control flow instructiosns.
+
+Machine instructions can only check for zero/non-zero. - This is in relation to boolean data type.
+
+Local variables in functions- 
+
+
+int f(int i, float x)
+{
+  int j;
+  {
+    float k, y;
+  }
+}
+
+i,x = Formal i - a[1], x - a[2] since this is not a static method the 0h index will the object that called this method
+j,k,y - Local - t1,t2,t3( Temporaray registers)
+
+Go through the method, and number the variables accroding to formal or local. So numbering is fresh for each menthod.
+
+Write instructions with comments, good for debugging.
+
+Static Single Asssignment/Side Effects.
+
+if y < 0
+   x = 1
+else
+   x = 2
+The above is not an SSA( x is assigned more that once.)
+
+j = i + 1
+k = i + 1
+
+Common sub expression elimiation - write k = j(because i+1 has already been calculated)
+
+This can be done only when the value of i does not change between the statements, j = i + 1, and also k = i + 1.
+The value of j also should not change between these two statements.
+
+j = i + 1(Dictionary keyed with right hand side and value is left hand side). 
+if 

@@ -1,0 +1,87 @@
+.static_data 1
+C_1:
+	move_immed_i t0, 11
+	move_immed_i t1, 0
+	hstore a0, t1, t0
+M_fun1_7:
+	move_immed_i t0, 0
+	hload t1, a0, t0
+	move_immed_i t2, 10
+	isub t3, t1, t2
+	move_immed_i t4, 0
+	hstore a0, t4, t3
+	ret
+M_fun_8:
+	move_immed_i t0, 2
+	imul t1, a1, t0
+	move_immed_i t2, 0
+	hload t3, a0, t2
+	iadd t4, t1, t3
+	move_immed_i t5, 0
+	hstore a0, t5, t4
+	save a0
+	save a1
+	save t0
+	save t1
+	save t2
+	save t3
+	save t4
+	save t5
+	save t6
+	call M_fun1_7
+	move t7, v0
+	restore t6
+	restore t5
+	restore t4
+	restore t3
+	restore t2
+	restore t1
+	restore t0
+	restore a1
+	restore a0
+	move_immed_i t8, 69
+	move a0, t8
+	ret
+C_2:
+main:
+	move_immed_i t4, 1
+	halloc t5, t4
+	save t0
+	save t1
+	save t2
+	save t3
+	save t4
+	move a0, t5
+	call C_1
+	restore t4
+	restore t3
+	restore t2
+	restore t1
+	restore t0
+	move t3, t5
+	save t0
+	save t1
+	save t2
+	save t3
+	save t4
+	save t5
+	move a0, t3
+	move_immed_i t6, 5
+	move a1, t6
+	call M_fun_8
+	move t7, v0
+	restore t5
+	restore t4
+	restore t3
+	restore t2
+	restore t1
+	restore t0
+	move_immed_i t8, 0
+	hstore sap, t8, t7
+	ret
+M_print_3:
+M_print_4:
+M_print_5:
+M_print_6:
+M_scan_int_1:
+M_scan_float_2:

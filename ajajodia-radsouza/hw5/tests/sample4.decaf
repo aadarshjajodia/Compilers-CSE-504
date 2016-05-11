@@ -1,0 +1,15 @@
+class A {
+   public int x, x2, x3;
+   int fun1(int x, int y, int z)
+   {
+      A a1;
+      a1 = new A();
+      a1.x2 = 7;
+      if(a1.x3 > 0)
+      {
+         return a1.x;
+      }
+      else
+         return 1;
+   }
+}

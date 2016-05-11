@@ -1,0 +1,66 @@
+class A {
+   static B x, y;
+   public int a1,a2;
+   boolean b1;
+   A () {
+     this.x = 123;
+     b1 = null;
+   }
+   void f() {
+	  break;
+      this.y = -123;
+      int b[][];
+      b = new int[100][200][];
+      return this.x + 1;
+   }
+   public A g() {
+      int OIOI, Hello;
+      i = this.f(a,b,c);
+      i++;
+      {
+      	  break;
+          int b;
+          b = a[100];
+          {
+
+          	int c;
+          	c = b+7;
+          }
+      }
+
+     int j;
+	
+     for(i=0;i<10;i++)
+      	j++;
+
+     if (i==0)
+	j++;
+
+     if (j>0)
+	i++;
+     else
+	j++;
+     
+     while(temp)
+	temp--;
+      
+	return i;
+   }
+}
+class B extends A {
+   int y;
+   public A s;
+   B () {
+     this.y = 2;
+     this.s = new A();
+   }
+   public int f(A k, int g) {
+   	  continue;
+   	  break;
+   	  this.s = new A(a,b);
+      return super.f() + k;
+   }
+   public int P(int k) {
+      return super.f() + k;
+   }
+}

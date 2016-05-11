@@ -1,0 +1,17 @@
+class A {
+   int b[][][];
+   public int x, x2, x3;
+   int fun1()
+   {
+      b = new int[23][4][3];
+      return 1;
+   }
+}
+class B extends A
+{
+   public int x;
+   B()
+   {
+      super.x = 6;
+   }
+}

@@ -1,0 +1,21 @@
+class A {
+   static int x, y;
+   int huh, pop;
+   void incr_one()
+   {
+      A.x = A.x + 1;
+   }
+}
+class B extends A{
+   static int x, y;
+   int huh, pop;
+   A a1;
+   void incr_one()
+   {
+      a1 = new A();
+      B.x = B.x + 1;
+   }
+}
+class C{
+   int huh, pop;
+}

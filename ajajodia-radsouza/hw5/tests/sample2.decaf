@@ -1,0 +1,23 @@
+class A {
+   static int x, y;
+   int huh, pop;
+   float c,d,e;
+   A()
+   {
+   }
+   int fun1(int a)
+   {
+      int b;
+      b = 2;
+      a = b;
+      return b;
+   }
+   int fun2(int a)
+   {
+      int b;
+      b = 2;
+      a = 8;
+      fun1(5);
+      return 0;
+   }
+}

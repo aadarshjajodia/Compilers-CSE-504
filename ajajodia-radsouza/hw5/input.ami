@@ -1,0 +1,31 @@
+.static_data 1
+C_A_1:
+C_A_2:
+M_fun1_7:
+	move_immed_i t2, 1
+	halloc t3, t2
+	save a0
+	save t0
+	save t1
+	save t2
+	move a0, t3
+	move_immed_i t4, 2
+	move a1, t4
+	call C_1
+	restore t2
+	restore t1
+	restore t0
+	restore a0
+	move t0, t3
+	move_immed_i t5, 0
+	hload t6, t0, t5
+	move t1, t6
+	move_immed_i t7, 0
+	move a0, t7
+	ret
+M_print_3:
+M_print_4:
+M_print_5:
+M_print_6:
+M_scan_int_1:
+M_scan_float_2:

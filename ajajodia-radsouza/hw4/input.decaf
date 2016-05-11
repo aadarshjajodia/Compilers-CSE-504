@@ -1,0 +1,16 @@
+class A {
+   int x;
+   public A () {
+     this.x = 0;
+   }
+}
+class B extends A {
+   int y;
+   B () {
+   }
+   public int f(int k) {
+	B b;
+	A a;
+	a = b;
+   }
+}

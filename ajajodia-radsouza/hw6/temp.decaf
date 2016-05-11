@@ -1,0 +1,68 @@
+class A {
+   public static int x; 
+   public int y;
+
+   public A()
+   {
+	this.y = 11;
+   }
+
+   public void fun1()
+   {
+	y = y - 10;
+   }
+
+   public int fun(int a)
+   {
+	y = a * 2 + y;
+	//fun1();
+	return 69;	
+   }
+}
+
+class B extends A {
+   public static void main()
+   {
+	int c,d,e;
+	int b[][];
+	A a;
+	a = new A();
+	A.x = a.fun(5);
+	//d = 0;
+	//c = A.x + a.y;
+
+	b = new int[10][10];
+	b[3][4] = c;
+	e = b[3][4] / 3;
+	
+	//A.x = e;
+	//e = a.y + 3;
+	//d = A.x - e;
+
+	c = 0;
+	e = 10;
+	d = 0;
+
+	//for(c = 0; c < e; c++)
+	//{
+	//    d--;
+	//}
+
+	//c = 1;
+
+	//while (e > 0)
+	//{
+	//	e--;
+	//	d = d + 3;
+	//}
+
+	//if (d == 0)
+	//{
+	//	c = 1;
+	//}
+	//else
+	//{
+	//	c = -1;
+	//}		
+   }
+}

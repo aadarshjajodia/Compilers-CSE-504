@@ -1,0 +1,113 @@
+class asjhdja { 
+	public static int fun1(int a, int b) 
+	{		
+		if (a < 4) 
+			bh++; 
+		
+		n = In.scan_int();
+	}	 
+}
+class asjhdja { 
+	public static int fun1(int a, int b) 
+	{ 
+		if (a < 4) 
+			bh++;		
+		for(i = 4; i < 5; i++) 
+			a++; 
+	} 
+}
+class nrfib {
+	public static void main() {
+		int n, i, fn, fn_prev;
+		n = In.scan_int();
+		n = -5;
+		fn = 1;
+		fn_1 = 0;
+		for(i=1; i<n; i=i+1) {
+			fn = fn_prev + fn;
+			fn_prev = fn - fn_prev;
+		}
+		Out.print("Fib = ");
+		Out.print(fn);
+		Out.print("\n");		
+	}
+}
+class rfib {
+	static int fib(int n) {
+		if (n <= 2)
+			return 1;
+		else
+			return fib(n-1) + fib(n-2);
+	}
+	public static void main() {
+		int n;
+		n = In.scan_int();
+		Out.print("Fib = ");
+		Out.print(fib(n));
+		Out.print("\n");
+	}
+}
+class IntList {
+	int value;
+	IntList next;
+	//int a // Here we have a comment
+	public static IntList create_list(int v) {
+		IntList new_element;
+		new_element = new IntList();
+		new_element.value = v;
+		new_element.next = null;
+		return new_element;
+	}
+	public IntList insert(int v) {
+		IntList new_element;
+		new_element = create_list(v);
+		new_element.next = this;
+		return new_element;
+	}
+	public boolean search(int v) {
+		if (this.value == v)
+		{ /* head of list matches */
+			return true;
+		}
+		else
+		/* not at head, so search rest of list */
+		if (next == null)
+		{ /* end of list, so search fails */
+			return false;
+		}
+		else
+		/* search rest of the list */
+		return next.search(v);
+	}
+	public int length() {
+		if (next == null) return 1;
+		else return 1 + next.length();
+	}
+}
+
+class asjhdja extends xyz{
+    public static int fun1(int a, int b)
+    {
+		int a, b[], c;
+		a = b = c;
+		b = new int[10];
+		do
+		{
+			int val;
+			val = 40;
+		} while(a < 100) ;
+    }
+}
+
+class asjhdja extends xyz{
+    public static int fun1(int a, int b)
+    {
+		float a;
+		a = +612.34;
+		if(!a)
+		{
+			Out.print("Well done");
+			Out.print("Very well done");
+		}
+    }
+}
